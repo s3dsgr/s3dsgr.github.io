@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="keywords" content="workshop, computer vision, audio processing, computer graphics, visual learning, machine learning">
+
+  <link rel="shortcut icon" href="static/img/site/favicon.png">
+
+  <title>S3DSGR @ECCV24</title>
+  <meta name="description" content="Scalable 3D Scene Generation and Geometric Scene Understanding, ECCV 2024 Workshop">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="Scalable 3D Scene Generation and Geometric Scene Understanding Workshop"/>
+  <meta property="og:url" content="https://s3dsgr.github.io/"/>
+  <meta property="og:description" content="Scalable 3D Scene Generation and Geometric Scene Understanding Workshop"/>
+  <meta property="og:site_name" content="Scalable 3D Scene Generation and Geometric Scene Understanding Workshop"/>
+  <meta property="og:image" content="Scalable 3D Scene Generation and Geometric Scene Understanding Workshop/static/img/site/teaser.jpg"/>
+
+  <!--Twitter Card Stuff-->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Scalable 3D Scene Generation and Geometric Scene Understanding Workshop"/>
+  <meta name="twitter:image" content="Scalable 3D Scene Generation and Geometric Scene Understanding Workshop/static/img/site/teaser.jpg">
+  <meta name="twitter:url" content="Scalable 3D Scene Generation and Geometric Scene Understanding Workshop"/>
+  <meta name="twitter:description" content="Scalable 3D Scene Generation and Geometric Scene Understanding Workshop, ECCV 2024 Workshop"/>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+  <link rel="stylesheet" href="static/css/main.css" media="screen,projection">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+  <style>
+
+    .people-pic {
+      max-width: 175px;
+      max-height: 175px;
+      /*width:300px;*/
+      /*height:300px;*/
+      /*object-fit: cover;*/
+      object-fit: scale-down;
+      border-radius: 50%;
+  }
+  </style>
+</head>
+
+  <body>
+
+    <!-- <div class="top-strip"></div> -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"></a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#cfp">Call for papers</a></li>
+        <li><a href="#dates">Schedule</a></li>
+        <li><a href="#wsp">Poster Presentation</a></li>      
+        <li><a href="#speakers">Invited Speakers</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Past Workshops <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../CVPR2021/index.html" target="__blank">CVPR 2021</a></li>
+            <li><a href="../ECCV2022/" target="__blank">ECCV 2022</a></li>
+          </ul>
+        </li> -->
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="container">
+      <div class="page-content">
+          <p><br /></p>
+<div class="row">
+  <div class="col-xs-12">
+    <center><h1>1st Workshop on Scalable 3D Scene Generation and Geometric Scene Understanding</h1></center>
+    <center><h2>ECCV 2024 Workshop</h2></center>
+    <center><strong>Room Amber 6</strong> - September 29th (9:00am - 1:00pm), 2024</center>
+  </div>
+</div>
+
+<hr />
+
+
+<!-- <br>
+  <center>
+  <h1 style="color:red"><a href="https://www.youtube.com/watch?v=gyJDGrbLknI">The <b>video recording</b> of this workshop is here!</a></h1>
+  </center>
+<br> -->
+
+<!-- <div class="alert alert-info" role="alert">
+  <b>Join Zoom Meeting  <a href="https://kaust.zoom.us/j/95818223470">here</a>.</b>
+</div> -->
+
+
+
+<!-- <div class="row" id="teaser">  
+    <div>  
+    <img src="static/img/site/teaser.jpg" style="width: 100%; height: auto;"/>
+  </div>
+</div> -->
+
+
+<!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/a.png">
+</div>
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/b.png">
+</div>
+ -->
+
+
+
+
+
+
+<p><br /></p>
+<div class="row" id="intro">
+  <div class="col-xs-12">
+    <h2>Introduction</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+        Large-scale geometric scene understanding is one of the most critical and long-standing research directions in computer vision, 
+        with the impactful applications in autonomous driving, and robotics. Recently, there has been a surge of interest in 3D scene generation,
+        driven by its wide-ranging applications in the gaming industry, augmented reality (AR), and virtual reality (VR).
+        All these have been transforming our lives and enabling significant commercial opportunities. Both academia and industry have been investing heavily in pushing the
+        research directions toward more efficiency and handling the large-scale scene.     </p>
+    <p>
+       The efficiency and quality of the large-scale reconstruction, and generation rely on the 3D representation and priors applied in solving the problem.
+       Moreover, different industries such as robotics, autonomous driving and gaming industry have distinct requirements on the quality and efficiency of the obtained 3D scene structures. 
+       The proposed workshop will gather top researchers and engineers from both academia and industry to discuss the future key challenges for this.
+      </p>
+  </div>
+</div>
+
+<p><br /></p>
+
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Call For Papers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+      <p>
+        <span style="font-weight:500;">Call for papers:</span> We invite non-archival papers of up to 14 pages (in ECCV format) for work 
+        on tasks related to 3D generation, reconstruction, geometric scene understanding.
+        Paper topics may include but are not limited to:
+      </p>
+      <ul>
+        <li>Scalable large-scale 3D scene generation</li>
+        <li>Efficient 3D representation learning for large-scale 3D scene reconstruction </li>
+        <li>Learning compositional structure of the 3D Scene, 3D scalable Object-centric learning</li>
+        <li>3D Reconstruction and generation for dynamic scene (with humans and/or rigid objects such as cars)</li>
+        <li>Online learning for scalable 3D scene reconstruction </li>
+        <li>Foundation models for 3D geometric scene understanding</li>
+        <li>3D Reconstruction and Generation for AR/VR/Robotics etc </li>
+        <li>Datasets for large-scale scene reconstruction and generation with (moving objects)</li>
+      </ul>
+      <p>
+        <span style="font-weight:500;">Submission:</span> We encourage submissions of up to 14 pages, excluding references and acknowledgements.
+        The submission should be in the ECCV format.
+        Reviewing will be double-blind.
+        Please submit your paper to the following address by the deadline: 
+         <a href="https://cmt3.research.microsoft.com/S3DSGR2024/">Submission Portal</a>
+    <!--    <span style="color:#1a1aff;font-weight:400;"><a href="mailto:multimodalities3dscenes@gmail.com">multimodalities3dscenes@gmail.com</a></span>
+        Please mention in your email if your submission has already been accepted for publication (and the name of the conference). -->
+      </p>
+  </div>
+</div>                                                                                        
+
+<p><br /></p>
+<div class="row" id="wsp">
+  <div class="col-xs-12">
+    <h2>Poster Presentation</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table>
+      <tbody> 
+      <tr><td><a href=" ">#1. Few-shot Novel View Synthesis using Depth Aware 3D Gaussian Splatting</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Raja Kumar, Vanshika Vats, University of California Santa Cruz</font></td></tr>
+      <tr><td><a href=" ">#2. On Scaling Up 3D Gaussian Splatting Training</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Hexu Zhao, Haoyang Weng, Daohan Lu, Ang Li, Jinyang Li, Aurojit Panda, Saining Xie, New York University</font></td></tr>
+      <tr><td><a href=" ">#3. AEPnP: A Less-constrained EPnP Solver for Pose Estimation with Anisotropic Scaling,</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Jiaxin Wei, Stefan Leutenegger, Laurent Kneip, Technical University of Munich, ShanghaiTech University</font></td> </tr>        
+      <tr><td><a href=" ">#4. Scalable Indoor Novel-View Synthesis using Drone-Captured 360 Imagery with 3D Gaussian Splatting,</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Yuanbo Chen, Chengyu Zhang, Jason Wang, Xuefan Gao, Avideh Zakhor, University of California, Berkeley</font></td></tr>
+      <tr><td><a href="https://sceneteller.github.io/">#5. SceneTeller: Language-to-3D Scene Generation </a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Başak Melis Öcal, Sezer Karaoğlu, Theo Gevers, ECCV2024 </font></td></tr>
+      <tr><td><a href="https://nerf-mae.github.io/">#6. NeRF-MAE: Masked AutoEncoders for Self-Supervised 3D Representation Learning for Neural Radiance Fields</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Muhammad Zubair Irshad, Sergey Zakharov, Vitor Guizilini, Adrien Gaidon, Zsolt Kira,  Rares Ambrus, ECCV2024 </font></td></tr>
+      <tr><td><a href="https://yang-l1.github.io/blockfusion/">#7. BlockFusion: Expandable 3D Scene Generation using Latent Tri-plane Extrapolation,</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Zhennan Wu, Yang Li, Han Yan, Taizhang Shang, Weixuan Sun, Senbo Wang, Ruikai Cui,	weizhe Liu,	Hiroyuki Sato, Hongdong Li,	Pan Ji, SIGGRAPH 2024</font></td> </tr>        
+    </tbody></table>
+  </div>
+</div>
+        
+<p><br /></p>
+
+<p><br /></p>
+
+<div class="row" id="dates">
+  <div class="col-xs-12">
+    <h2>Important Dates</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>Paper submission deadline</td>
+          <td>July 7th, 2024</td>
+        </tr>
+        <tr>
+          <td>Notifications to accepted papers</td>
+          <td>July 28th, 2024</td>
+        </tr>
+        <tr>
+          <td>Paper camera ready</td>
+          <td>August 15th, 2024</td>
+        </tr>
+        <tr>
+          <td>Workshop date</td>
+          <td>September 29th, AM, 2024 </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="schedule">
+  <div class="col-xs-12">
+    <h2>Schedule</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+     <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>Welcome</td>
+          <td>9:05am - 9:10am</td>
+        </tr>
+        <tr>
+          <td>Zan Gojcic <br/> <em> Neural rendering – from reconstruction to generation   </em></td>
+          <td>9:10am - 9:40am</td>
+        </tr>
+        <tr>
+          <td>Marc Pollefeys <br/><em> Mapping, Localization and Understanding of Large-Scenes for Robotics and AI</em> </td>
+          <td>9:40am - 10:10am</td>
+        </tr>
+        <tr>
+          <td>Vincent Lepetit <br/> <em>Novel methods for the exploration and reconstruction of indoor scenes </em> </td>
+          <td>10:10am - 10:40am</td>
+        </tr>
+        <tr>
+          <td>Coffee Break and Poster Session</td>
+          <td>10:40am - 11:40am</td>
+        </tr>
+        <tr>
+          <td>Jiajun Wu <br/><em>3D Generation: Scaling from Objects to Scenes to Worlds </em></td>
+          <td>11:40am - 12:10pm</td>
+        </tr>
+        <tr>
+          <td>Lingjie Liu <br /><em>Human Pose Tracking and Controllable Motion Generation</em></td>
+          <td>12:10pm - 12:40pm</td>
+        </tr>
+        <tr>
+          <td>Concluding Remarks</td>
+          <td>12:40pm - 12:50pm</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="speakers">
+  <div class="col-xs-12">
+    <h2>Invited Speakers</h2>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://people.inf.ethz.ch/marc.pollefeys//"><img class="people-pic" style="float:left;margin-right:50px;" src="speaker/mac1.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://people.inf.ethz.ch/marc.pollefeys//">Marc Pollefeys</a></b> is a Professor of Computer Science at ETH Zurich and the Director of the Microsoft
+      Mixed Reality and AI Lab in Zurich where he works with a team of scien-
+      tists and engineers to develop advanced perception capabilities for HoloLens
+      and Mixed Reality. He is best known for his work in 3D computer vision,
+      having been the first to develop a software pipeline to automatically turn
+      photographs into 3D models, but also works on robotics, graphics and machine learning problems.
+Other noteworthy projects he worked on are real-time 3D scanning with mobile devices, a real-time pipeline for 3D reconstruction of cities from vehicle mounted-cameras, camera-based self-driving cars and the first fully autonomous vision-based drone. 
+      Most recently his academic research has focused on combining 3D reconstruction with semantic scene understanding.
+      
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<!--<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.utoronto.ca/~fidler/"><img class="people-pic" style="float:left;margin-right:50px;" src="speaker/fidler.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a></b>  is an Associate Professor at University of Toronto, affiliated faculty at the Vector Institute and VP of AI Research at NVIDIA, leading a
+      research lab in Toronto. Prior to that, in 2012/2013, Sanja was a Research Assistant Professor at Toyota Technological Institute at Chicago. Sanja’s
+      work is in the area of Computer Vision and Machine Learning, specifically
+      the intersection of computer vision and graphics, 3D vision, 3D reconstruction and synthesis; and interactive methods for image annotation.
+    </p>
+  </div>
+</div>
+<p><br /></p> -->
+
+        <div class="row">
+  <div class="col-md-2">
+    <a href="https://zgojcic.github.io/"><img class="people-pic" style="float:left;margin-right:50px;" src="speaker/Zan_c.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://zgojcic.github.io/">Zan Gojcic</a></b>  is a Senior Research Scientist and a Research Manager at NVIDIA Zurich, 
+      where he leads a research team focused on Neural Reconstruction and Simulation. He holds a PhD from ETH Zurich and has completed a research 
+      visit at Stanford University during his doctoral studies. Zan's expertise lies at the intersection of computer vision and computer graphics, 
+      with a particular emphasis on 3D vision and neural reconstruction. His research aims to advance large-scale reconstruction and generation of 
+      data-driven simulation environments, to enable testing and training of end-to-end robotics systems.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+        
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://lingjie0206.github.io//"><img class="people-pic" style="float:left;margin-right:50px;" src="speaker/lingjie.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://lingjie0206.github.io//">Lingjie Liu</a></b>  is the Aravind K. Joshi Assistant Professor in the Department of Computer and Information Science at the University of Pennsylvania, where she leads the Penn Computer Graphics Lab.
+      and she is also a member of the General Robotics, Automation, Sensing \& Perception (GRASP) Lab. Previously, 
+      she was a Lise Meitner Postdoctoral Research Fellow at Max Planck Institute for Informatics. She received her Ph.D. degree at the University of Hong Kong in 2019.
+      Her research interests are at the interface of Computer Graphics, Computer Vision, and AI, with a focus on Neural Scene Representations, 
+      Neural Rendering, Human Performance Modeling and Capture, and 3D Reconstruction. 
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://vincentlepetit.github.io//"><img class="people-pic" style="float:left;margin-right:50px;" src="speaker/vincent.png" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://vincentlepetit.github.io///">Vincent Lepetit</a></b> is a professor at ENPC ParisTech, France. Before that, he was a full professor at the Institute for Computer Graphics and Vision, TU Graz, Austria and before that, a senior researcher at CVLab, EPFL, Switzerland.
+
+His research focuses on 3D scene understanding. More exactly, he aims at reducing as much as possible the guidance a system needs to learn new 3D objects and new 3D environments: How can we remove the need for training data for each new 3D problem? Currently, even self-supervised methods often require CAD models, which are not necessarily available for any type of object. This question has both theoretical implications and practical applications, as the need for training data, even synthetic, is often a deal breaker for non-academic problems.
+
+Vincent received the Koenderick “test-of-time” award at the European Conference on Computer Vision 2020 for “Brief: Binary Robust Independent Elementary Features”. He regularly serves as an area chair of the major computer vision conferences: CVPR, ICCV, ECCV, ACCV, BMVC and as an editor for PAMI and IJCV.
+    </p>
+  </div>
+</div>
+
+<p><br /></p>
+        <div class="row">
+  <div class="col-md-2">
+    <a href="https://jiajunwu.com///"><img class="people-pic" style="float:left;margin-right:50px;" src="speaker/Jiajun_Wu.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://jiajunwu.com////">Jiajun Wu</a></b> is an Assistant Professor of Computer Science and of Psychology at Stanford University, working on computer vision, machine learning, and computational cognitive science. Before joining Stanford, he was a Visiting Faculty Researcher at Google Research. He received his PhD in Electrical Engineering and Computer Science from the Massachusetts Institute of Technology. Wu's research has been recognized through the Young Investigator Programs (YIP) by ONR and by AFOSR, the NSF CAREER award,
+      paper awards and finalists at ICCV, CVPR, SIGGRAPH Asia, CoRL, and IROS, dissertation awards from ACM, AAAI, and MIT, the 2020 Samsung AI Researcher of the Year, 
+      and faculty research awards from J.P. Morgan, Samsung, Amazon, and Meta.
+    </p>
+  </div>
+</div>
+
+<p><br /></p>
+
+<div class="row" id="organizers">
+  <div class="col-xs-12">
+    <h2>Organizers</h2>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-2">
+        <a href="http://users.cecs.anu.edu.au/~mliu/">
+          <img class="people-pic" src="orgniser/img/miaomiao.jpg" />
+        </a>
+        <div class="people-name">
+          <a href="http://users.cecs.anu.edu.au/~mliu/">Miaomiao Liu</a>
+          <h6>Australian National University, Australia</h6>
+        </div>
+      </div>
+
+  <div class="col-xs-2">
+    <a href="https://alvarezlopezjosem.github.io/">
+        <img class="people-pic" src="orgniser/img/jose.jpg" />      
+    </a>
+    <div class="people-name">
+      <a href="https://alvarezlopezjosem.github.io/">Jose M. Alvarez</a>
+      <h6>NVIDIA, US</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://people.epfl.ch/mathieu.salzmann/">
+      <img class="people-pic" src="orgniser/img/mathieu.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://people.epfl.ch/mathieu.salzmann/">Mathieu Salzmann</a>
+      <h6>EPFL, Swiss Data Science Center (SDSC), Switzerland</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://sites.google.com/site/buyuliu911/home/">
+      <img class="people-pic" src="orgniser/img/buyu.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://sites.google.com/site/buyuliu911/home/">Buyu Liu</a>
+      <h6>Zhejiang University, China</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="http://users.cecs.anu.edu.au/~hongdong/">
+      <img class="people-pic" src="orgniser/img/hongdong.png" />
+    </a>
+    <div class="people-name">
+      <a href="http://users.cecs.anu.edu.au/~hongdong/">Hongdong Li</a>
+      <h6>Australian National University, Australia</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://users.cecs.anu.edu.au/~hartley//">
+      <img class="people-pic" src="orgniser/img/richard.jpeg" />
+    </a>
+    <div class="people-name">
+      <a href="https://users.cecs.anu.edu.au/~hartley//">Richard Hartley</a>
+      <h6>Australian National University, & Google, Australia</h6>
+    </div>
+  </div>
+
+</div>
+<p><br /></p>
+<p><br /></p>
+
+<div class="row" id="contact">
+  <div class="col-xs-12">
+    <h2>Contact</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      To contact the organizers please use <b>S3DSGR@gmail.com</b>
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<hr />
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Acknowledgments</h2>
+  </div>
+</div>
+<p><a name="/acknowledgements"></a></p>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Thanks to <span style="color:#1a1aff;font-weight:400;"> <a href="https://visualdialog.org/">visualdialog.org</a></span> for the webpage format.
+    </p>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
